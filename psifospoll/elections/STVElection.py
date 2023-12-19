@@ -1,6 +1,6 @@
-from src.elections.tallies.STVutils import *
-from src.elections.election import Election
-from src.elections.tallies.STVtally import STVTally
+from psifospoll.elections.tallies.STVutils import *
+from psifospoll.elections.election import Election
+from psifospoll.elections.tallies.STVtally import STVTally
 
 
 class STVElection(Election):

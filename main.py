@@ -1,12 +1,12 @@
-from src import STVElection
+from psifospoll import STVElection
 
 
 def stvTally(s, candidates_list, ballot_list):
     election = STVElection()
     election.runElection(s, candidates_list, ballot_list)
-    print(election.getRoundResumes)
-    print(election.getTalliesResumes)
-    print(election.getWinnersList)
+    print(election.getRoundResumes())
+    print(election.getTalliesResumes())
+    print(election.getWinnersList())
 
 
 l1 = [

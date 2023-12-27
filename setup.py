@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="psifospoll",
-    version="0.1.0",
+    version="1.0.0",
     author="Fernanda Macías",
     author_email="fernanda.macias@ug.uchile.cl",
     description="PsifosPoll is a python library for different voting methods",

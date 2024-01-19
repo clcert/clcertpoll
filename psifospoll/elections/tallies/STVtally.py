@@ -28,7 +28,7 @@ class STVTally(Tally):
         self.candidates_and_tallies = defaultdict(int)
         for ballot in self.ballot_list:
             preferences_list = ballot.preferences_list
-            if len(preferences_list) > 0:
+            if len(preferences_list) > 0 and ballot.weight > 0:
                 first_preference = preferences_list[0]
                 self.candidates_and_tallies[first_preference] += ballot.weight
         self.candidates_and_tallies = dict(self.candidates_and_tallies)
@@ -38,7 +38,7 @@ class STVTally(Tally):
         tallies_and_candidates = invertDict(self.candidates_and_tallies)
         tallies = list(tallies_and_candidates.keys())
 
-        elected_tallies = list(filter(lambda x: x > self.q, tallies))
+        elected_tallies = list(filter(lambda x: x >= self.q, tallies))
         elected_candidates = [
             candidate
             for tally in elected_tallies

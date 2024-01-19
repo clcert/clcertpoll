@@ -8,7 +8,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name="psifospoll",
-    version="1.0.1",
+    version="1.0.2",
     author="Fernanda Macías",
     author_email="fernanda.macias@ug.uchile.cl",
     description="PsifosPoll is a python library for different voting methods",

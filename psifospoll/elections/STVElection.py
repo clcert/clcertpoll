@@ -8,6 +8,7 @@ class STVElection(Election):
         self.round_resumes = []
         self.tallies_resumes = []
         self.winners_list = []
+        self.quota = None
 
     def getRoundResumes(self):
         return self.round_resumes
@@ -18,10 +19,18 @@ class STVElection(Election):
     def getWinnersList(self):
         return self.winners_list
 
+    def getQuota(self):
+        return self.quota
+    
+    def setQuota(self, new_value):
+        global quota
+        self.quota = new_value
+
     def runElection(self, s, candidates_list, ballot_list):
         global round_resumes, tallies_resumes, winners_list
         stv = STVTally(s, candidates_list, ballot_list)
         open_seats = s
+        self.setQuota(stv.q)
 
         while len(stv.round_resume["hopeful"]) > open_seats and open_seats > 0:
             stv.computeFirstPreferenceTallies()

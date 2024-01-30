@@ -21,7 +21,7 @@ class STVElection(Election):
 
     def getQuota(self):
         return self.quota
-    
+
     def setQuota(self, new_value):
         global quota
         self.quota = new_value

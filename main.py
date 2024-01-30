@@ -4,10 +4,10 @@ from psifospoll import STVElection
 def stvTally(s, candidates_list, ballot_list):
     election = STVElection()
     election.runElection(s, candidates_list, ballot_list)
-    print('round resumes', election.getRoundResumes())
-    print('tallies resumes', election.getTalliesResumes())
-    print('winners list', election.getWinnersList())
-    print('quota', election.getQuota())
+    print("round resumes", election.getRoundResumes())
+    print("tallies resumes", election.getTalliesResumes())
+    print("winners list", election.getWinnersList())
+    print("quota", election.getQuota())
 
 
 l1 = [

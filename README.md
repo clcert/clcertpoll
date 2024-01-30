@@ -30,6 +30,7 @@ def stvTally(seats, candidates_list, ballot_list):
     print(election.getRoundResumes())
     print(election.getTalliesResumes())
     print(election.getWinnersList())
+    print(election.getQuota())
 
 # Voting example
 # Three seats, five candidates and six ballots

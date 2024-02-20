@@ -1,1 +1,1 @@
-from psifospoll.elections.STVElection import STVElection
+from psifospoll.psifospoll import STVElection

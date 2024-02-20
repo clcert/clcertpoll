@@ -1,9 +1,9 @@
 from math import floor
 import random
 from collections import defaultdict
-from psifospoll.elections.tallies.STVutils import *
-from psifospoll.elections.tallies.tally import Tally
-from psifospoll.elections.tallies.ballots.STVballot import STVBallot
+from psifospoll.psifospoll.elections.tallies.STVutils import *
+from psifospoll.psifospoll.elections.tallies.ballots import STVBallot
+from psifospoll.psifospoll.elections.tallies.tally import Tally
 
 
 class STVTally(Tally):

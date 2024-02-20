@@ -1,4 +1,4 @@
-from psifospoll.elections.tallies.ballots.ballot import Ballot
+from psifospoll.psifospoll.elections.tallies.ballots.ballot import Ballot
 
 
 class STVBallot(Ballot):

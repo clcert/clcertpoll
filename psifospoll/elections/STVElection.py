@@ -1,6 +1,5 @@
-from psifospoll.elections.tallies.STVutils import *
-from psifospoll.elections.election import Election
-from psifospoll.elections.tallies.STVtally import STVTally
+from psifospoll.psifospoll.elections.election import Election
+from psifospoll.psifospoll.elections.tallies import STVTally
 
 
 class STVElection(Election):
